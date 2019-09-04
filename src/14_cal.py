@@ -22,3 +22,19 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+args = input("Enter month and year")
+print(args)
+
+try:
+    if len(args) == 0:
+      month = datetime.now().month
+      year = datetime.now().year
+    elif len(args) == 1:
+      month = int(args[0])
+    elif len(args) == 2:
+      month = int(args[0])
+      year = int(args[1])
+
+except:
+    print("ERROR: Please provide correct format.")
