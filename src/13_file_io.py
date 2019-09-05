@@ -16,3 +16,8 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # sure that it contains what you expect it to contain
 
 # YOUR CODE HERE
+
+file = open("bar.txt", "w")
+content = ["First line!\n This is my second line!\n This is my third line!"]
+file.writelines(content)
+file.close()
